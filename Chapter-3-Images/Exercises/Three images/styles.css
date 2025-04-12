@@ -1,0 +1,68 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body background and text styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0c2967; /* Light gray background */
+    color: #333; /* Dark text color for good contrast */
+    padding: 20px;
+}
+
+/* Container for the entire page content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around the content */
+}
+
+/* Main heading */
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #a65d5d;
+    margin-bottom: 40px;
+}
+
+/* Styling for each image container */
+.image-container {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Image styling */
+img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(100%) contrast(50%);
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+/* Hover effects on images */
+img:hover {
+    transform: scale(1.05);
+    filter: brightness(100%);
+}
+
+/* Image captions (licenses) */
+p {
+    font-size: 1rem;
+    color: #814545;
+    margin-top: 10px;
+}
+
+/* Add a border and padding to each image container */
+.image-container p {
+    border-top: 1px solid #0c2967;
+    padding-top: 10px;
+    margin-top: 20px;
+    font-style: italic;
+}
