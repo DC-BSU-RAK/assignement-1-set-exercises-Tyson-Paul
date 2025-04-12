@@ -1,0 +1,85 @@
+/* Base styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #022c43;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #4dd0e1;
+}
+
+/* Button-like link */
+.button-link {
+    background-color: #4dd0e1;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: #022c43 !important;
+    font-weight: 500;
+}
+
+.button-link:hover {
+    background-color: #00bcd4;
+}
+
+/* Section styling */
+.section-box {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.section-box h1 {
+    color: #022c43;
+    margin-bottom: 20px;
+}
+
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #e1f5fe;
+    padding: 10px 15px;
+    border-radius: 6px;
+    flex: 1 1 calc(33.3% - 30px);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card strong {
+    display: block;
+    font-weight: bold;
+}
