@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stylish Embedded Video</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="video-container">
+    <video id="myVideo" poster="poster.png" loop muted>
+      <source src="video.mp4" type="video/mp4">
+    </video>
+    <button id="playBtn" class="play-btn">&#9658;</button>
+    <p class="credit-text">
+        Video by <a href="https://www.pexels.com/@pixabay/" target="_blank" rel="noopener noreferrer">Pixabay</a> from <a href="https://www.pexels.com/video/koi-fishes-856951/" target="_blank" rel="noopener noreferrer">Pexels</a>
+      </p>
+  </div>
+
+  <script>
+    const video = document.getElementById('myVideo');
+    const playBtn = document.getElementById('playBtn');
+
+    playBtn.addEventListener('click', () => {
+      video.play();
+      playBtn.style.display = 'none';
+    });
+
+    video.addEventListener('click', () => {
+      if (video.paused) {
+        video.play();
+        playBtn.style.display = 'none';
+      } else {
+        video.pause();
+        playBtn.style.display = 'block';
+      }
+    });
+  </script>
+</body>
+</html>

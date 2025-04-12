@@ -1,0 +1,82 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Container with glassmorphism effect */
+  .video-container {
+    position: relative;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Video styles with glow and hover effects */
+  video {
+    max-width: 700px;
+    width: 90vw;
+    border-radius: 16px;
+    border: 3px solid #00f2ff;
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  video:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 35px rgba(0, 242, 255, 0.7);
+  }
+  
+  /* Custom play button */
+  .play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    z-index: 10;
+  }
+  
+  .play-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    
+  }
+  .credit-text {
+    margin-top: 15px;
+    text-align: center;
+    color: #ddd;
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+  
+  .credit-text a {
+    color: #00f2ff;
+    text-decoration: none;
+  }
+  
+  .credit-text a:hover {
+    text-decoration: underline;
+  }
+  
