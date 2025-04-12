@@ -1,0 +1,95 @@
+/* Reset and base styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #654ea3, #eaafc8);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  
+  /* Container card */
+  .container {
+    background-color: #1e2a38;
+    width: 500px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+    text-align: center;
+  }
+  
+  /* Title */
+  .container h1 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #00e6e6;
+  }
+  
+  /* Input layout */
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 0.95rem;
+  }
+  
+  input[type="number"] {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Focus effect */
+  input[type="number"]:focus {
+    border-color: #00e6e6;
+    outline: none;
+  }
+  
+  /* Button styling */
+  .actions button {
+    background-color: #0077cc;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .actions button:hover {
+    background-color: #654ea3;
+  }
+  
+  /* Result output styling */
+  .output-label {
+    margin-top: 25px;
+    font-size: 1.2rem;
+  }
+  
+  #totalAmount {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00ffcc;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
