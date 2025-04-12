@@ -1,0 +1,196 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #2c3e50;
+    padding: 10px 0;
+}
+
+.navbar {
+    text-align: center;
+    margin: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #e74c3c;
+}
+
+.button-link {
+    padding: 8px 16px;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: #c0392b;
+}
+
+/* Main Content Styles */
+main {
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #2c3e50;
+}
+
+.section-box {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li strong {
+    color: #2980b9;
+}
+
+/* Flexbox for Cast/Team */
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #ecf0f1;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: center;
+    width: 150px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card strong {
+    display: block;
+    font-size: 1.1em;
+    color: #2980b9;
+}
+
+.card:hover {
+    background-color: #bdc3c7;
+    cursor: pointer;
+}
+
+/* Navigation on page styles */
+.navbar ul li a {
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #f39c12;
+}
+
+/* Section Box Styles */
+.section-box p, .section-box ul, .section-box h3 {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Cards in the Cast Section */
+.card {
+    width: 180px;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.card:hover {
+    background-color: #34495e;
+    color: #fff;
+}
+
+.card strong {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Make Content More Responsive */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .flex-box {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+        margin: 15px 0;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar a {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+}
