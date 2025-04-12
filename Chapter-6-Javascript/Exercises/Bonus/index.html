@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RGB Colour Guessing Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="game-container">
+    <h1>RGB Colour Guessing Game</h1>
+    <p class="instruction">Guess the colour that matches: <span id="rgb-value">rgb(0,0,0)</span></p>
+    <div class="color-options">
+      <!-- Color options will be injected here -->
+    </div>
+    <div class="feedback"></div>
+    <div class="status">
+      <div>Score: <span id="score">0</span></div>
+      <div>Lives Remaining: <span id="lives">3</span></div>
+    </div>
+    <button id="next-btn" class="hidden">Next</button>
+    <button id="restart-btn" class="hidden">Restart</button>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
