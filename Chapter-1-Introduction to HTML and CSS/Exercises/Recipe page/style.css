@@ -1,0 +1,71 @@
+/* General body styling */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #001f3f; /* Dark blue */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container centers everything */
+.container {
+    width: 80%;
+    max-width: 1000px;
+}
+
+/* Title box */
+.title-box {
+    background-color: #ffcc00; /* Highlight color */
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    color: #000;
+}
+
+/* Content box */
+.content-box {
+    background-color: #2c3e50; /* Contrast to dark blue */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Image section */
+.image-section {
+    flex: 1 1 40%;
+    padding: 10px;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Text section */
+.text-section {
+    flex: 1 1 60%;
+    padding: 10px;
+}
+
+/* Subheadings */
+h2 {
+    color: #ffa500; /* Dark contrasting color */
+    margin-top: 20px;
+}
+
+/* Description paragraph */
+.description {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+/* Lists */
+ul, ol {
+    margin-left: 20px;
+}
