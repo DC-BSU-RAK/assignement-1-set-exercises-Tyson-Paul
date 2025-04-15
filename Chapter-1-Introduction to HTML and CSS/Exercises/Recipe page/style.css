@@ -2,32 +2,32 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #001f3f; /* Dark blue */
+    background-color: #001f3f; /* Dark blue background */
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100vh; /* Full height viewport */
 }
 
-/* Container centers everything */
+/* Container that wraps everything */
 .container {
     width: 80%;
     max-width: 1000px;
 }
 
-/* Title box */
+/* Header box styling */
 .title-box {
-    background-color: #ffcc00; /* Highlight color */
+    background-color: #ffcc00; /* Yellow highlight */
     padding: 20px;
     text-align: center;
     border-radius: 8px 8px 0 0;
     color: #000;
 }
 
-/* Content box */
+/* Main content box styling */
 .content-box {
-    background-color: #2c3e50; /* Contrast to dark blue */
+    background-color: #2c3e50; /* Slight contrast from body */
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
@@ -35,37 +35,54 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-/* Image section */
+/* Image section styling and centering */
 .image-section {
-    flex: 1 1 40%;
+    flex: 1 1 100%; /* Full width on smaller screens */
+    display: flex;
+    justify-content: center;
     padding: 10px;
 }
 
 .image-section img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 10px; /* Rounded corners */
 }
 
-/* Text section */
+/* Text content section */
 .text-section {
-    flex: 1 1 60%;
+    flex: 1 1 100%; /* Full width under image */
     padding: 10px;
 }
 
-/* Subheadings */
+/* Section headers */
 h2 {
-    color: #ffa500; /* Dark contrasting color */
+    color: #ffa500; /* Orange color */
     margin-top: 20px;
 }
 
-/* Description paragraph */
+/* Paragraph under the image */
 .description {
     font-size: 1.1em;
     margin-bottom: 15px;
 }
 
-/* Lists */
+/* List spacing */
 ul, ol {
     margin-left: 20px;
+}
+
+/* Box around Ingredients section */
+.ingredients-section {
+    border: 3px solid #32cd32; /* Lime green */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Box around Method section */
+.method-section {
+    border: 3px solid #1e90ff; /* Dodger blue */
+    padding: 15px;
+    border-radius: 8px;
 }
