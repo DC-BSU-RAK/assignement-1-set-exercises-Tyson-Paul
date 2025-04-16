@@ -1,93 +1,100 @@
+/* === Global Styles === */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #17072b;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-family: Tahoma, sans-serif;
-    font-weight: 700;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0;
-    margin: 10px 0 0;
-  }
-  
-  nav ul li {
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  main {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-  }
-  
-  .welcome {
-    flex: 3;
-    padding-right: 20px;
-  }
-  
-  .welcome h2 {
-    font-weight: bold;
-    text-decoration: underline;
-  }
+  font-family: Arial, sans-serif; /* Set default font */
+  margin: 0; /* Remove default spacing */
+  padding: 0;
+}
 
-  .welcome img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    border-radius: 8px;
-  }
-  
-  .line-up .images img {
-    width: 190px;
-    height: 190px;
-    object-fit: cover;
-    border-radius: 4px;
-  }
-  
-  .line-up {
-    flex: 1;
-    background-color: #172d67;
-    color: white;
-    padding: 20px;
-  }
-  
-  .line-up h2 {
-    font-weight: bold;
-    text-decoration: underline;
-  }
-  
-  .line-up ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  .line-up .images {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-  }
-  
-  footer {
-    background-color: #8c15e9;
-    text-align: center;
-    color: white;
-    padding: 10px;
-  }
-  
+/* === Header Styles === */
+header {
+  background-color: #17072b; /* Dark purple background */
+  color: white; /* White text for contrast */
+  text-align: center;
+  padding: 20px;
+  font-family: Tahoma, sans-serif; /* Custom header font */
+  font-weight: 700;
+}
+
+/* === Navigation Menu === */
+nav ul {
+  display: flex; /* Display nav items in a row */
+  justify-content: center; /* Center the nav items */
+  list-style-type: none; /* Remove bullets */
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+nav ul li {
+  margin: 0 15px; /* Spacing between menu items */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* === Main Layout === */
+main {
+  display: flex; /* Flex layout: welcome + line-up */
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* === Welcome Section === */
+.welcome {
+  flex: 3; /* Takes up 3/4 of the main space */
+  padding-right: 20px;
+}
+
+.welcome h2 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.welcome img {
+  width: 100%; /* Responsive image */
+  height: auto;
+  max-width: 100%;
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* === Line-Up Sidebar === */
+.line-up {
+  flex: 1; /* Takes up 1/4 of the main space */
+  background-color: #172d67; /* Blue sidebar background */
+  color: white;
+  padding: 20px;
+}
+
+.line-up h2 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.line-up ul {
+  list-style-type: none; /* No bullets */
+  padding-left: 0;
+}
+
+/* === Images inside Sidebar === */
+.line-up .images {
+  display: flex; /* Display images side-by-side */
+  gap: 10px; /* Space between images */
+  margin-top: 10px;
+}
+
+.line-up .images img {
+  width: 190px;
+  height: 190px;
+  object-fit: cover; /* Crop images without distortion */
+  border-radius: 4px;
+}
+
+/* === Footer === */
+footer {
+  background-color: #8c15e9; /* Bright purple */
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
