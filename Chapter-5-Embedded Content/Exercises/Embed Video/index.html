@@ -3,28 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <title>Stylish Embedded Video</title>
+  <!-- Link to external CSS file -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Container that holds the video and controls -->
   <div class="video-container">
+
+    <!-- HTML5 video element with a poster image (displayed before play) -->
     <video id="myVideo" poster="poster.png" loop muted>
+      <!-- MP4 video source -->
       <source src="video.mp4" type="video/mp4">
     </video>
+
+    <!-- Custom Play Button (appears over the video) -->
     <button id="playBtn" class="play-btn">&#9658;</button>
+
+    <!-- Credit text under the video -->
     <p class="credit-text">
-        Video by <a href="https://www.pexels.com/@pixabay/" target="_blank" rel="noopener noreferrer">Pixabay</a> from <a href="https://www.pexels.com/video/koi-fishes-856951/" target="_blank" rel="noopener noreferrer">Pexels</a>
-      </p>
+      Video by 
+      <a href="https://www.pexels.com/@pixabay/" target="_blank" rel="noopener noreferrer">Pixabay</a> 
+      from 
+      <a href="https://www.pexels.com/video/koi-fishes-856951/" target="_blank" rel="noopener noreferrer">Pexels</a>
+    </p>
   </div>
 
+  <!-- JavaScript for play/pause functionality -->
   <script>
+    // Get references to the video and the play button
     const video = document.getElementById('myVideo');
     const playBtn = document.getElementById('playBtn');
 
+    // Play video on play button click and hide the button
     playBtn.addEventListener('click', () => {
       video.play();
       playBtn.style.display = 'none';
     });
 
+    // Toggle play/pause when video is clicked
     video.addEventListener('click', () => {
       if (video.paused) {
         video.play();
