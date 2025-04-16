@@ -2,28 +2,49 @@
 <html lang="en">
 
 <head>
+  <!-- Set character encoding and responsive viewport -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Page title -->
   <title>RGB Colour Guessing Game</title>
+
+  <!-- Link to external CSS file -->
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <!-- Main container for the game -->
   <div class="game-container">
+
+    <!-- Game Title -->
     <h1>RGB Colour Guessing Game</h1>
-    <p class="instruction">Guess the colour that matches: <span id="rgb-value">rgb(0,0,0)</span></p>
+
+    <!-- Instruction showing the RGB value to guess -->
+    <p class="instruction">
+      Guess the colour that matches: <span id="rgb-value">rgb(0,0,0)</span>
+    </p>
+
+    <!-- Container for the color options (buttons inserted via JavaScript) -->
     <div class="color-options">
-      <!-- Color options will be injected here -->
+      <!-- Color squares will be injected here dynamically -->
     </div>
+
+    <!-- Feedback message shown after guessing -->
     <div class="feedback"></div>
+
+    <!-- Score and lives tracking -->
     <div class="status">
       <div>Score: <span id="score">0</span></div>
       <div>Lives Remaining: <span id="lives">3</span></div>
     </div>
+
+    <!-- Buttons for next round and restarting the game -->
     <button id="next-btn" class="hidden">Next</button>
     <button id="restart-btn" class="hidden">Restart</button>
   </div>
 
+  <!-- Link to JavaScript file -->
   <script src="index.js"></script>
 </body>
 
