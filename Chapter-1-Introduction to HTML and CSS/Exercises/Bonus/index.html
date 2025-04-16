@@ -7,38 +7,54 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Sticky Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#html-tags">HTML Tags</a></li>
+      <li><a href="#css-properties">CSS Properties</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Header -->
   <header>
     <h1>HTML & CSS Quick Reference Guide</h1>
   </header>
 
   <main>
+    <!-- HTML Tags Section -->
     <section class="content">
-      <h2>HTML Tags</h2>
+      <h2 id="html-tags">HTML Tags</h2>
       <div class="guide">
+
+        <!-- Heading Tag -->
         <div class="tag">
           <h3>&lt;h1&gt; to &lt;h6&gt; - Headings</h3>
           <p>Used to define headings, from most important (&lt;h1&gt;) to least important (&lt;h6&gt;).</p>
           <pre><code>&lt;h1&gt;Main Heading&lt;/h1&gt;</code></pre>
         </div>
 
+        <!-- Paragraph Tag -->
         <div class="tag">
           <h3>&lt;p&gt; - Paragraph</h3>
           <p>Defines a paragraph of text.</p>
           <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
         </div>
 
+        <!-- Anchor Tag -->
         <div class="tag">
           <h3>&lt;a&gt; - Anchor</h3>
           <p>Creates a hyperlink to another page or location.</p>
           <pre><code>&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;</code></pre>
         </div>
 
+        <!-- Image Tag -->
         <div class="tag">
           <h3>&lt;img&gt; - Image</h3>
           <p>Embeds an image into the page.</p>
           <pre><code>&lt;img src="image.jpg" alt="Description" /&gt;</code></pre>
         </div>
 
+        <!-- List Tags -->
         <div class="tag">
           <h3>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt; - Lists</h3>
           <p>Used for unordered and ordered lists.</p>
@@ -48,6 +64,7 @@
 &lt;/ul&gt;</code></pre>
         </div>
 
+        <!-- Division Tag -->
         <div class="tag">
           <h3>&lt;div&gt; - Division</h3>
           <p>A container used to group content.</p>
@@ -56,12 +73,14 @@
 &lt;/div&gt;</code></pre>
         </div>
 
+        <!-- Span Tag -->
         <div class="tag">
           <h3>&lt;span&gt; - Inline Container</h3>
           <p>Used to style small portions of text inline.</p>
           <pre><code>&lt;p&gt;This is &lt;span style="color:red"&gt;red&lt;/span&gt; text.&lt;/p&gt;</code></pre>
         </div>
 
+        <!-- Form Tag -->
         <div class="tag">
           <h3>&lt;form&gt; - Form</h3>
           <p>Creates an HTML form for user input.</p>
@@ -70,12 +89,14 @@
 &lt;/form&gt;</code></pre>
         </div>
 
+        <!-- Input Tag -->
         <div class="tag">
           <h3>&lt;input&gt; - Input Field</h3>
           <p>Used inside forms to receive user input.</p>
           <pre><code>&lt;input type="text" placeholder="Enter your name" /&gt;</code></pre>
         </div>
 
+        <!-- Button Tag -->
         <div class="tag">
           <h3>&lt;button&gt; - Button</h3>
           <p>Clickable button for submitting forms or triggering JavaScript.</p>
@@ -84,51 +105,61 @@
       </div>
     </section>
 
+    <!-- CSS Properties Section -->
     <section class="content">
-      <h2>CSS Properties</h2>
+      <h2 id="css-properties">CSS Properties</h2>
       <div class="guide">
+
+        <!-- Color Property -->
         <div class="tag">
           <h3>color</h3>
           <p>Sets the color of the text.</p>
           <pre><code>p { color: darkblue; }</code></pre>
         </div>
 
+        <!-- Background Color Property -->
         <div class="tag">
           <h3>background-color</h3>
           <p>Sets the background color of an element.</p>
           <pre><code>div { background-color: #f0f0f0; }</code></pre>
         </div>
 
+        <!-- Font Size -->
         <div class="tag">
           <h3>font-size</h3>
           <p>Sets the size of the text.</p>
           <pre><code>h1 { font-size: 2em; }</code></pre>
         </div>
 
+        <!-- Margin -->
         <div class="tag">
           <h3>margin</h3>
           <p>Sets the space outside the element.</p>
           <pre><code>div { margin: 20px; }</code></pre>
         </div>
 
+        <!-- Padding -->
         <div class="tag">
           <h3>padding</h3>
           <p>Sets the space inside the element.</p>
           <pre><code>div { padding: 15px; }</code></pre>
         </div>
 
+        <!-- Border -->
         <div class="tag">
           <h3>border</h3>
           <p>Sets the border around the element.</p>
           <pre><code>div { border: 1px solid #ccc; }</code></pre>
         </div>
 
+        <!-- Display -->
         <div class="tag">
           <h3>display</h3>
           <p>Controls the display type of the element.</p>
           <pre><code>span { display: inline-block; }</code></pre>
         </div>
 
+        <!-- Text Align -->
         <div class="tag">
           <h3>text-align</h3>
           <p>Aligns text horizontally.</p>

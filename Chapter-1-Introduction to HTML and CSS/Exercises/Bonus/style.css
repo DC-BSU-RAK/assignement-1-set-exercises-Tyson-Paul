@@ -1,87 +1,118 @@
 /* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #c19c93, #3b1d05);
-    color: #fff;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 3rem;
-    margin: 0;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
-  
-  h2 {
-    font-size: 2rem;
-    margin-top: 20px;
-  }
-  
-  h3 {
-    font-size: 1.5rem;
-    color: #fff;
-  }
-  
-  code {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #333;
-    color: #fff;
-    padding: 5px;
-    border-radius: 5px;
-  }
-  
-  pre {
-    background-color: #2c2c2c;
-    padding: 15px;
-    border-radius: 5px;
-    margin: 10px 0;
-    overflow: auto;
-  }
-  
-  /* Layout and Guide Styling */
-  .content {
-    max-width: 1000px;
-    margin: 30px auto;
-    padding: 20px;
-  }
-  
-  .guide {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-  }
-  
-  .tag {
-    background-color: #2a2a2a;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-  }
-  
-  .tag:hover {
-    background-color: #5c6bc0;
-  }
-  
-  .tag h3 {
-    margin-bottom: 10px;
-  }
-  
-  .tag p {
-    font-size: 1.1em;
-    line-height: 1.6;
-  }
-  
-  .tag pre {
-    background-color: #1c1c1c;
-  }
-  
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #c19c93, #3b1d05);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sticky Navigation */
+nav {
+  background-color: #444;
+  position: sticky; /* Makes the nav stick to the top */
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #5c6bc0;
+  border-radius: 5px;
+}
+
+/* Header */
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* Code and Pre Styling */
+code {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+pre {
+  background-color: #2c2c2c;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 10px 0;
+  overflow: auto;
+}
+
+/* Layout and Guide Styling */
+.content {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.guide {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.tag {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.tag:hover {
+  background-color: #5c6bc0;
+}
+
+.tag h3 {
+  margin-bottom: 10px;
+}
+
+.tag p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.tag pre {
+  background-color: #1c1c1c;
+}
