@@ -1,30 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <!-- Meta tags for character encoding and responsive layout -->
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Page Title -->
   <title>Petrol Calculator</title>
+
+  <!-- Link to external stylesheet -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Load JavaScript file after HTML is parsed -->
   <script defer src="index.js"></script>
 </head>
+
 <body>
+  <!-- Main container for the app -->
   <div class="container">
+    <!-- Page heading -->
     <h1><u>Petrol Calculator</u></h1>
 
+    <!-- Wrapper to group input fields -->
     <div class="wrapper">
+      <!-- Input group for petrol price -->
       <div class="input-group">
         <label for="Petrol_Price">Petrol Price per Litre</label>
         <input id="Petrol_Price" type="number" placeholder="1.72" value="1.72" />
       </div>
 
+      <!-- Input group for litres purchased -->
       <div class="input-group">
         <label for="liters">Litres Purchased</label>
         <input id="liters" type="number" placeholder="0" value="0" />
       </div>
     </div>
 
+    <!-- Section containing the calculate button and result -->
     <div class="actions">
+      <!-- Button triggers the calculate() function -->
       <button onclick="calculate()">Calculate Total</button>
+
+      <!-- Result section initially hidden -->
       <div id="result" class="hidden">
         <p class="output-label">Total Amount:</p>
         <p id="totalAmount">AED 0.00</p>
@@ -32,4 +50,5 @@
     </div>
   </div>
 </body>
+
 </html>
